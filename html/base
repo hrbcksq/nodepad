@@ -123,6 +123,7 @@ clear:both; ???
     pt - пункты
     small\large - обычно не используют
 
+text-indent - отступ абзаца
 font-size - размер шрифта
 font-weight - жирность основные {bold, normal}, дополнительные:{bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900}
 font-style - начертание текста {normal, italic}
