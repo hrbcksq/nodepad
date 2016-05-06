@@ -6,6 +6,11 @@
 Couping, Cohesion, SL, IoC, DI, DIP, Abstract factory and method
 
 ##Couping
+Coupling (also known as Dependency) is a degree to which one program unit (e.g., a class, module, subsystem) relies on other units. It is a measure of strength of the interconnections between elements, which should be minimized.
+
+>We want elements that are independent of each other. In other words, we want to develop applications that exhibit loose (rather than tight) coupling.
+
+However, since parts need to communicate among themselves, we do not have completely independent modules. As interconnections grow between the parties involved, one module will need more information about the other, increasing the dependency between them.
 
 ##Cohesion
 Cohesion in software engineering is the degree to which the elements of a certain module belong together(in our case that we are going to discuss here we are mostly interested in classes, so module = class, unless otherwise noted). Thus, it is a measure of how strongly related each piece of functionality expressed by the source code of a software module is.
@@ -35,7 +40,8 @@ KISS, DRY, YAGNI and etc.
 
 # Unit testing, TDD
 
-Module and integration tests, test driven development
+Module and integration tests, test driven development 
+> Arrange-Act-Assert - A-A-A
 
 
 
