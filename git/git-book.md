@@ -131,7 +131,11 @@ As soon as one was ready, you might merge this branch back into the master branc
 
 - git reset HEAD &lt;item&gt;
 
-> Revert changes since HEAD pointer, HEAD by default store previous commit 
+> Ustage changes since HEAD pointer
+
+- git checkout -- &lt;item&gt;
+
+> Blow away all changes since last commit
 
 - git log --oneline --graph
 
