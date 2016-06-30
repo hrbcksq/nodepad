@@ -135,7 +135,7 @@ As soon as one was ready, you might merge this branch back into the master branc
 
 - git checkout -- &lt;item&gt;
 
-> Blow away all changes since last commit
+> Blow away all changes since last commit, for unstaged files
 
 - git log --oneline --graph
 
