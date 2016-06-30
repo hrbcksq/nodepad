@@ -82,32 +82,64 @@ As soon as one was ready, you might merge this branch back into the master branc
 
 >- git checkout -b new_branch
 
->> To checkout and create a branch at the same time. This is the same thing as doing:
+> To checkout and create a branch at the same time. This is the same thing as doing:
 - git branch new_branch
 - git checkout new_branch
 
 - git rm &lt;target&gt;
+
 > This will not only remove the actual files from disk, but will also stage the removal of the files for us
 
- Recursive option on *git rm*:
+> Recursive option on *git rm*:
 >- rm -r &lt;folder_of_cats&gt;
  
-If you happen to delete a file without using 'git rm' you'll find that you still have to 'git rm' the deleted files from the working tree. You can save this step by using the '-a' option on 'git commit', which auto removes deleted files with the commit.
+> If you happen to delete a file without using 'git rm' you'll find that you still have to 'git rm' the deleted files from the working tree. You can save this step by using the '-a' option on 'git commit', which auto removes deleted files with the commit.
+
 >- git commit -am "deleted"
 
 - git merge &lt;target brunch&gt;
+
 > Merge current brunch with &lt;target brunch&gt;
 
 - git branch -d &lt;branch name&gt;
+
 > Delete brunch
 
-Also if you You might decide to delete the branch since you're scrapping the idea. You'll notice that *git branch -d bad_feature* doesn't work. This is because *-d* won't let you delete something that hasn't been merged.
+> Also if you You might decide to delete the branch since you're scrapping the idea. You'll notice that *git branch -d bad_feature* doesn't work. This is because *-d* won't let you delete something that hasn't been merged.
 
-You can either add the --force (-f) option or use -D which combines -d -f together into one command.
+> You can either add the --force (-f) option or use -D which combines -d -f together into one command.
 
 - git push
 
 > Push!
+
+- git push &lt;remote brunch&gt; &lt;local brunch&gt;
+
+> Push local brunch to remote brunch
+
+- git checkout -b &lt;new local brunch&gt;
+
+> This command creates new brunch and checkout it
+
+- git diff
+
+> Show unstaged differences since last commit
+
+- git diff --staged
+
+> Show staged differences since last commit 
+
+- git reset HEAD &lt;item&gt;
+
+> Revert changes since HEAD pointer, HEAD by default store previous commit 
+
+- git log --oneline --graph
+
+> git rm --cached &lt;stoptrackingfile&gt;
+
+> git config --list
+
+> git config --global alias.mylog \ "log --pretty=format:'%h %s [%an]' --graph"
 
 [1]: https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks
 [2]: https://help.github.com/articles/using-pull-requests/
